@@ -1,0 +1,21 @@
+# Wealthbound / Ömer Faruk İncibaş — app-ads.txt
+#
+# Bu dosyanin CANLI kopyasi, gelistirici web sitesinin KOK dizininde durmak zorundadir:
+#   https://farukincibas-hue.github.io/app-ads.txt
+# AdMob yalnizca kok dizine bakar; alt klasordeki bir kopya (ornegin
+# /wealthbound-legal/app-ads.txt) taranmaz ve envanter dogrulanmamis kalir.
+#
+# Bu dosya kaynak kopyadir. Degistirirsen farukincibas-hue.github.io reposundaki
+# kopyayi da guncelle.
+#
+# Satirin anlami:
+#   google.com                -> reklam sistemi
+#   pub-2331127222591861      -> AdMob yayinci kimligin (app.json'daki androidAppId ile ayni)
+#   DIRECT                    -> envanteri dogrudan sen kontrol ediyorsun, araci yok
+#   f08c47fec0942fa0          -> Google'in TAG sertifikasyon kimligi, herkes icin sabit
+#
+# Yeni oyun eklendiginde bu dosyaya YENI SATIR EKLENMEZ: ayni AdMob yayinci
+# kimligini kullandigi surece tek satir tum uygulamalari kapsar. Yalnizca baska bir
+# reklam agi veya mediation eklersen o agin satiri eklenir.
+
+google.com, pub-2331127222591861, DIRECT, f08c47fec0942fa0
