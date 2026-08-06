@@ -1,4 +1,4 @@
-# Wealthbound / Ömer Faruk İncibaş — app-ads.txt
+# Brightwell Studio — app-ads.txt
 #
 # Bu dosyanin CANLI kopyasi, gelistirici web sitesinin KOK dizininde durmak zorundadir:
 #   https://farukincibas-hue.github.io/app-ads.txt
