@@ -71,7 +71,8 @@
     .button {
       min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 9px;
       border: 1px solid var(--line); border-radius: 99px; padding: 13px 21px; background: #fff;
-      font-size: .9rem; font-weight: 800; text-decoration: none; transition: transform .16s ease,box-shadow .16s ease,background .16s ease;
+      font-family: "Segoe UI", Arial, sans-serif; font-size: .94rem; font-weight: 600; letter-spacing: 0;
+      text-decoration: none; transition: transform .16s ease,box-shadow .16s ease,background .16s ease;
     }
     .button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(24,32,51,.12); }
     .button.primary { border-color: var(--blue); background: var(--blue); color: #fff; }
@@ -105,16 +106,16 @@
     .pills { display: flex; flex-wrap: wrap; gap: 9px; margin: 24px 0 30px; }
     .pill { border: 1px solid rgba(255,255,255,.13); border-radius: 99px; padding: 8px 13px; color: #b8c6d6; font-size: .76rem; font-weight: 750; }
     .feature { position: relative; overflow: hidden; min-width: 0; border: 1px solid rgba(255,255,255,.13); border-radius: 38px; background: #0a1b2c; box-shadow: 0 34px 80px rgba(0,0,0,.38); }
-    .feature img { width: 100%; aspect-ratio: 1024/500; object-fit: cover; }
+    .feature img { width: 100%; height: auto; }
     .feature::after { content: "Featured on Google Play"; position: absolute; right: 18px; bottom: 18px; border: 1px solid rgba(255,255,255,.14); border-radius: 99px; padding: 8px 12px; background: rgba(4,13,23,.76); font-size: .72rem; font-weight: 750; backdrop-filter: blur(8px); }
 
     .gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; padding: 20px 0 34px; }
     .gallery-heading h3 { max-width: 660px; margin-bottom: 0; font-size: clamp(2rem,4vw,3.8rem); letter-spacing: -.055em; line-height: 1.04; }
     .gallery-heading p { max-width: 390px; margin-bottom: 4px; color: #9cb1c8; }
     .gallery { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; padding-bottom: 112px; }
-    .gallery figure { overflow: hidden; margin: 0; border: 1px solid rgba(255,255,255,.12); border-radius: 27px; background: #0b1b2d; box-shadow: 0 16px 40px rgba(0,0,0,.22); }
+    .gallery figure { overflow: hidden; min-width: 0; margin: 0; border: 1px solid rgba(255,255,255,.12); border-radius: 27px; background: #0b1b2d; box-shadow: 0 16px 40px rgba(0,0,0,.22); }
     .gallery figure:nth-child(even) { transform: translateY(28px); }
-    .gallery img { width: 100%; aspect-ratio: 9/16; object-fit: cover; }
+    .gallery img { width: 100%; height: auto; }
     .principles { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; padding: 0 0 112px; }
     .principle { border-top: 1px solid rgba(255,255,255,.16); padding-top: 24px; }
     .number { margin-bottom: 34px; color: var(--teal); font-size: .73rem; font-weight: 850; letter-spacing: .13em; }
@@ -185,7 +186,7 @@
       <span>Main Mode Studio</span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#wealthbound">Wealthbound</a>
+      <a href="#work">Work</a>
       <a href="#studio">Studio</a>
       <a href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube</a>
     </nav>
@@ -199,7 +200,7 @@
           <h1 id="hero-title">Ideas, built into <span class="accent">motion.</span></h1>
           <p>Main Mode Studio creates focused digital experiences with clear ideas, tactile interactions and a reason to come back.</p>
           <div class="actions">
-            <a class="button primary" href="#wealthbound">Explore Wealthbound <span class="arrow" aria-hidden="true">↓</span></a>
+            <a class="button primary" href="#work">See our work <span class="arrow" aria-hidden="true">↓</span></a>
             <a class="button" href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Get it on Google Play <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -212,11 +213,12 @@
       </div>
     </section>
 
-    <section class="product" id="wealthbound" aria-labelledby="wealthbound-title">
+    <section id="work" aria-label="Selected work">
+    <article class="product" id="wealthbound" aria-labelledby="wealthbound-title">
       <div class="product-inner">
         <div class="product-intro">
           <div class="product-copy">
-            <p class="product-label">Available now on Android</p>
+            <p class="product-label">Selected work · 01 · Available now on Android</p>
             <div class="product-id">
               <img class="product-icon" src="/assets/wealthbound-icon.webp" alt="Wealthbound app icon" width="256" height="256" />
               <div><h2 id="wealthbound-title">Wealthbound</h2><p>Money Board Game</p></div>
@@ -245,6 +247,8 @@
           <article class="principle"><div class="number">03 / ADAPT</div><h3>No two runs are the same</h3><p>New careers, board layouts and life events keep each route unpredictable.</p></article>
         </div>
       </div>
+    </article>
+    <!-- Future products are added here as sibling portfolio articles. -->
     </section>
 
     <section class="studio" id="studio" aria-labelledby="studio-title">
