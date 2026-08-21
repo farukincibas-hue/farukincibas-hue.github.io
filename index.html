@@ -133,8 +133,10 @@
     .studio-card p { margin-bottom: 23px; color: var(--muted); }
     .text-link { color: var(--blue-deep); font-weight: 800; text-underline-offset: 4px; }
     footer { width: var(--wrap); margin: 0 auto; border-top: 1px solid var(--line); padding: 28px 0 42px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--muted); font-size: .82rem; }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
-    .footer-links a { font-weight: 700; text-underline-offset: 3px; }
+    .footer-groups { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+    .footer-group { display: flex; align-items: center; gap: 12px; }
+    .footer-group span { color: var(--ink); font-weight: 750; }
+    .footer-group a { font-weight: 650; text-underline-offset: 3px; }
 
     @media (max-width: 960px) {
       .hero { padding-top: 64px; }
@@ -268,12 +270,18 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="site-footer">
     <div>&copy; 2026 Main Mode Studio &middot; Independent apps and games.</div>
-    <div class="footer-links">
-      <a href="https://mainmodestudio.com/wealthbound-legal/privacy-policy.html">Privacy policy</a>
-      <a href="/app-ads.txt">app-ads.txt</a>
-      <a href="mailto:farukincibas@gmail.com">Contact</a>
+    <div class="footer-groups">
+      <nav class="footer-group" aria-label="Studio links">
+        <span>Studio</span>
+        <a href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:farukincibas@gmail.com">Contact</a>
+      </nav>
+      <nav class="footer-group" aria-label="Wealthbound legal links">
+        <span>Wealthbound</span>
+        <a href="https://mainmodestudio.com/wealthbound-legal/privacy-policy.html">Privacy</a>
+      </nav>
     </div>
   </footer>
 </body>
