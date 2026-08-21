@@ -1,11 +1,11 @@
-# Brightwell Studio — app-ads.txt
+# Main Mode Studio — app-ads.txt
 #
 # Bu dosyanin CANLI kopyasi, gelistirici web sitesinin KOK dizininde durmak zorundadir:
-#   https://farukincibas-hue.github.io/app-ads.txt
+#   https://mainmodestudio.com/app-ads.txt
 # AdMob yalnizca kok dizine bakar; alt klasordeki bir kopya (ornegin
 # /wealthbound-legal/app-ads.txt) taranmaz ve envanter dogrulanmamis kalir.
 #
-# Bu dosya kaynak kopyadir. Degistirirsen farukincibas-hue.github.io reposundaki
+# Bu dosya kaynak kopyadir. Degistirirsen canli geliştirici sitesi reposundaki
 # kopyayi da guncelle.
 #
 # Satirin anlami:

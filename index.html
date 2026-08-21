@@ -3,57 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Brightwell Studio — Mobile Games</title>
+    <title>Main Mode Studio — Apps &amp; Games</title>
     <meta
       name="description"
-      content="Brightwell Studio makes mobile games, including Wealthbound, a run-based game about reaching financial freedom."
+      content="Main Mode Studio creates independent apps and games, including Wealthbound."
     />
+    <link rel="canonical" href="https://mainmodestudio.com/" />
+    <link rel="icon" type="image/png" href="/main-mode-studio-logo.png" />
+    <meta property="og:title" content="Main Mode Studio — Apps &amp; Games" />
+    <meta
+      property="og:description"
+      content="Independent apps and games, including Wealthbound."
+    />
+    <meta property="og:url" content="https://mainmodestudio.com/" />
+    <meta property="og:image" content="https://mainmodestudio.com/main-mode-studio-logo.png" />
     <style>
       :root {
-        color-scheme: dark;
-        --bg: #010b19;
-        --panel: #0b1c33;
-        --border: #1d3557;
-        --gold: #f2b134;
-        --text: #ffffff;
-        --muted: #93aec9;
+        color-scheme: light;
+        --bg: #f7f8fc;
+        --surface: #ffffff;
+        --ink: #1d2433;
+        --muted: #657086;
+        --border: #e3e7ef;
+        --blue: #1588ff;
+        --teal: #2fd2bf;
+        --shadow: 0 18px 48px rgba(38, 54, 84, 0.1);
       }
       * {
         box-sizing: border-box;
       }
       body {
         margin: 0;
-        padding: 48px 20px;
-        background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        padding: 56px 20px;
+        background:
+          radial-gradient(circle at 15% 10%, rgba(21, 136, 255, 0.1), transparent 28rem),
+          radial-gradient(circle at 85% 20%, rgba(47, 210, 191, 0.12), transparent 24rem),
+          var(--bg);
+        color: var(--ink);
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         line-height: 1.6;
-        display: flex;
-        justify-content: center;
+        min-height: 100vh;
       }
       main {
         width: 100%;
-        max-width: 640px;
+        max-width: 760px;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 42px;
+      }
+      .logo {
+        width: 76px;
+        height: 76px;
+        border-radius: 18px;
+        box-shadow: var(--shadow);
       }
       h1 {
-        font-size: 1.75rem;
-        margin: 0 0 8px;
+        font-size: clamp(2rem, 6vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+        margin: 0 0 6px;
       }
       .lede {
         color: var(--muted);
-        margin: 0 0 40px;
+        margin: 0;
       }
       section {
-        background: var(--panel);
+        background: rgba(255, 255, 255, 0.92);
         border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 24px;
+        border-radius: 22px;
+        padding: 28px;
         margin-bottom: 20px;
+        box-shadow: var(--shadow);
       }
       h2 {
-        font-size: 1.15rem;
-        margin: 0 0 8px;
-        color: var(--gold);
+        font-size: 1.25rem;
+        margin: 0 0 10px;
+      }
+      .eyebrow {
+        color: var(--blue);
+        font-size: 0.78rem;
+        font-weight: 750;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
       }
       p {
         margin: 0 0 12px;
@@ -62,27 +98,59 @@
         margin-bottom: 0;
       }
       a {
-        color: var(--gold);
+        color: #0877db;
+        text-underline-offset: 3px;
       }
-      ul {
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+        padding: 0;
         margin: 0;
-        padding-left: 20px;
-        color: var(--muted);
+        list-style: none;
       }
       footer {
         color: var(--muted);
         font-size: 0.875rem;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 34px;
+      }
+      @media (max-width: 520px) {
+        body {
+          padding-top: 34px;
+        }
+        header {
+          align-items: flex-start;
+        }
+        .logo {
+          width: 64px;
+          height: 64px;
+          border-radius: 15px;
+        }
+        section {
+          padding: 22px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Brightwell Studio</h1>
-      <p class="lede">Independent mobile games.</p>
+      <header>
+        <img
+          class="logo"
+          src="/main-mode-studio-logo.png"
+          alt="Main Mode Studio logo"
+          width="76"
+          height="76"
+        />
+        <div>
+          <h1>Main Mode Studio</h1>
+          <p class="lede">Independent apps and games.</p>
+        </div>
+      </header>
 
       <section>
+        <p class="eyebrow">Our products</p>
         <h2>Wealthbound</h2>
         <p>
           A run-based game about reaching financial freedom: draw a career, move around the
@@ -93,23 +161,19 @@
       </section>
 
       <section>
-        <h2>Legal</h2>
-        <ul>
+        <h2>Legal &amp; contact</h2>
+        <ul class="links">
           <li>
-            <a href="https://farukincibas-hue.github.io/wealthbound-legal/privacy-policy.html"
+            <a href="https://mainmodestudio.com/wealthbound-legal/privacy-policy.html"
               >Wealthbound privacy policy</a
             >
           </li>
           <li><a href="/app-ads.txt">app-ads.txt</a></li>
+          <li><a href="mailto:farukincibas@gmail.com">farukincibas@gmail.com</a></li>
         </ul>
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p><a href="mailto:farukincibas@gmail.com">farukincibas@gmail.com</a></p>
-      </section>
-
-      <footer>© 2026 Brightwell Studio</footer>
+      <footer>© 2026 Main Mode Studio · mainmodestudio.com</footer>
     </main>
   </body>
 </html>
