@@ -51,7 +51,8 @@ Legal pages live in a separate repo, `wealthbound-legal`, and are served under
    homepage. The about copy itself is written at studio level on purpose: it must keep working
    with three games in the catalog, so keep game-specific stories on the product pages.
 6. **Press kit** — in `press/index.html`, copy one `.press-game` block inside the `Games`
-   section and swap its facts and images. Studio-level material (description, factsheet, logo)
+   section and swap its facts and images. Each screenshot tile links to a `.lightbox` block by
+   id (`#shot-<game>-<name>`); copy those too and keep the ids unique. Studio-level material (description, factsheet, logo)
    stays in the section above and must not gain game-specific wording. A release with no press
    kit entry is invisible to anyone writing about it.
 7. **Check** — desktop and mobile widths, every link, and that the new page has no
