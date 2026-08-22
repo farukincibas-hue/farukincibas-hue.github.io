@@ -108,36 +108,36 @@
             </div>
           </div>
           <div class="lightbox" id="shot-wb-board" role="dialog" aria-label="Board and rival race">
-            <a class="lightbox-backdrop" href="#games" aria-label="Close"></a>
+            <a class="lightbox-backdrop" href="#games" data-close-lightbox aria-label="Close"></a>
             <figure class="lightbox-figure">
               <img src="/assets/wealthbound-board.webp" alt="The Wealthbound board with a rival race in progress" width="576" height="1024" loading="lazy" />
               <figcaption><span>Board and rival race</span><a href="/assets/wealthbound-board.webp" target="_blank" rel="noopener">Open the file <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <a class="lightbox-close" href="#games" aria-label="Close"><span aria-hidden="true">✕</span></a>
+            <a class="lightbox-close" href="#games" data-close-lightbox aria-label="Close"><span aria-hidden="true">✕</span></a>
           </div>
           <div class="lightbox" id="shot-wb-careers" role="dialog" aria-label="Careers revealed">
-            <a class="lightbox-backdrop" href="#games" aria-label="Close"></a>
+            <a class="lightbox-backdrop" href="#games" data-close-lightbox aria-label="Close"></a>
             <figure class="lightbox-figure">
               <img src="/assets/wealthbound-careers.webp" alt="Career cards revealed at the start of a run" width="576" height="1024" loading="lazy" />
               <figcaption><span>Careers revealed</span><a href="/assets/wealthbound-careers.webp" target="_blank" rel="noopener">Open the file <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <a class="lightbox-close" href="#games" aria-label="Close"><span aria-hidden="true">✕</span></a>
+            <a class="lightbox-close" href="#games" data-close-lightbox aria-label="Close"><span aria-hidden="true">✕</span></a>
           </div>
           <div class="lightbox" id="shot-wb-assets" role="dialog" aria-label="Buying a business">
-            <a class="lightbox-backdrop" href="#games" aria-label="Close"></a>
+            <a class="lightbox-backdrop" href="#games" data-close-lightbox aria-label="Close"></a>
             <figure class="lightbox-figure">
               <img src="/assets/wealthbound-assets.webp" alt="Buying an income-producing business" width="576" height="1024" loading="lazy" />
               <figcaption><span>Buying a business</span><a href="/assets/wealthbound-assets.webp" target="_blank" rel="noopener">Open the file <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <a class="lightbox-close" href="#games" aria-label="Close"><span aria-hidden="true">✕</span></a>
+            <a class="lightbox-close" href="#games" data-close-lightbox aria-label="Close"><span aria-hidden="true">✕</span></a>
           </div>
           <div class="lightbox" id="shot-wb-journey" role="dialog" aria-label="Chapter progression">
-            <a class="lightbox-backdrop" href="#games" aria-label="Close"></a>
+            <a class="lightbox-backdrop" href="#games" data-close-lightbox aria-label="Close"></a>
             <figure class="lightbox-figure">
               <img src="/assets/wealthbound-journey.webp" alt="Chapter progression screen" width="576" height="1024" loading="lazy" />
               <figcaption><span>Chapter progression</span><a href="/assets/wealthbound-journey.webp" target="_blank" rel="noopener">Open the file <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <a class="lightbox-close" href="#games" aria-label="Close"><span aria-hidden="true">✕</span></a>
+            <a class="lightbox-close" href="#games" data-close-lightbox aria-label="Close"><span aria-hidden="true">✕</span></a>
           </div>
         </article>
         <!-- Add future games here: copy one .press-game block and swap the facts and images. -->
@@ -190,5 +190,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Closing through the #games anchor smooth-scrolled the page away from the
+    // gallery; stepping back in history drops the hash instantly and restores the
+    // exact scroll position. The href stays as a no-JS fallback.
+    (function () {
+      var isOpen = function () { return location.hash.indexOf('#shot-') === 0; };
+      document.addEventListener('click', function (event) {
+        var trigger = event.target.closest('[data-close-lightbox]');
+        if (!trigger || !isOpen()) return;
+        event.preventDefault();
+        history.back();
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && isOpen()) history.back();
+      });
+    })();
+  </script>
 </body>
 </html>
