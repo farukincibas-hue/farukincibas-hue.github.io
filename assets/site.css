@@ -444,6 +444,56 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .feature-point h3 { margin-bottom: 9px; font-size: 1.25rem; }
 .feature-point p { margin-bottom: 0; color: #9cb1c8; font-size: 0.92rem; }
 
+/* Studio side column: status card + who is behind it */
+.studio-side { display: grid; gap: 18px; align-content: start; }
+.studio-person {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px 30px 30px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+.studio-person h3 { margin-bottom: 10px; font-size: 1.22rem; letter-spacing: -0.03em; }
+.studio-person p { margin-bottom: 18px; color: var(--muted); font-size: 0.97rem; }
+.person-links { display: flex; flex-wrap: wrap; gap: 20px; }
+
+/* Product page closing band: keeps a light section between the dark page and the footer */
+.product-outro { background: var(--canvas); padding: clamp(64px, 8vw, 104px) 0 clamp(70px, 8vw, 108px); }
+.product-outro-inner { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+.product-outro h2 { max-width: 620px; margin-bottom: 0; font-size: clamp(2rem, 3.6vw, 3.2rem); letter-spacing: -0.05em; line-height: 1.02; }
+
+/* Press kit */
+.press-hero { padding: 34px 0 clamp(52px, 6vw, 76px); }
+.press-hero h1 { max-width: 900px; margin-bottom: 20px; font-size: clamp(2.5rem, 5.2vw, 4.6rem); letter-spacing: -0.06em; line-height: 1; }
+.press-lead { max-width: 660px; margin-bottom: 30px; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.24rem); }
+.press-section { padding-bottom: clamp(56px, 6vw, 84px); }
+.press-section h2 { margin-bottom: 6px; font-size: clamp(1.75rem, 3vw, 2.6rem); letter-spacing: -0.045em; }
+.press-section-alt { padding-top: clamp(46px, 5vw, 66px); border-top: 1px solid var(--line); }
+.press-game-head { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+.press-game-head .product-icon { width: 68px; height: 68px; border-radius: 18px; }
+.press-game-head h2 { margin-bottom: 2px; }
+.press-game-head p { margin-bottom: 0; color: var(--muted); font-weight: 650; }
+.press-pitch { max-width: 720px; margin-bottom: 30px; color: var(--muted); font-size: 1.05rem; }
+.press-note { max-width: 620px; margin-bottom: 24px; color: var(--muted); }
+.press-facts { margin: 22px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(28px, 4vw, 60px); }
+.press-facts > div { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 14px; border-top: 1px solid var(--line); padding: 15px 0; }
+.press-facts dt { color: var(--muted); font-size: 0.72rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; padding-top: 3px; }
+.press-facts dd { margin: 0; color: var(--ink); font-size: 0.98rem; }
+.press-assets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; gap: 16px; }
+.press-asset {
+  overflow: hidden;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+.press-asset img { width: 100%; height: auto; }
+.press-asset figcaption { padding: 13px 16px 15px; color: var(--muted); font-size: 0.8rem; font-weight: 650; }
+.press-asset-wide { grid-column: 1 / -1; }
+.press-asset-logo img { padding: 22px; background: var(--canvas); }
+
 /* Footer */
 .site-footer {
   position: relative;
@@ -527,6 +577,8 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .feature-points { grid-template-columns: 1fr; gap: 34px; }
   .feature-point-number { margin-bottom: 14px; }
   .studio-principles { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .press-assets { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .press-facts { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
@@ -561,6 +613,10 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .product-icon { width: 58px; height: 58px; border-radius: 15px; }
   .studio-note { padding: 24px; }
   .studio-principles { grid-template-columns: 1fr; gap: 14px; }
+  .studio-person { padding: 24px 22px 26px; }
+  .product-outro-inner { align-items: flex-start; flex-direction: column; }
+  .press-assets { grid-template-columns: 1fr; }
+  .press-facts > div { grid-template-columns: 1fr; gap: 4px; }
   .studio-principles li { padding: 24px 22px 26px; border-radius: 18px; }
   .product-page-hero { padding: 68px 0 76px; }
   .product-page-title { align-items: flex-start; }

@@ -11,6 +11,7 @@ index.html                  Studio home: hero, product catalog, about, footer
 assets/site.css             Single stylesheet shared by every page
 assets/<product>-*.webp     Product imagery (icon, feature graphic, screenshots)
 products/<slug>/index.html  One page per released product
+press/index.html            Press kit: studio facts, game factsheets, downloadable images
 app-ads.txt                 AdMob verification — do not rename or move
 main-mode-studio-logo.png   Brand mark used in header, footer and favicon
 .nojekyll                   Serve files as-is, no Jekyll processing
@@ -45,7 +46,10 @@ Legal pages live in a separate repo, `wealthbound-legal`, and are served under
    On the product's own page mark its link `aria-current="page"`.
 5. **About section** — update the `Latest release` / `In progress` lines in `.studio-facts` on the
    homepage so the studio status stays true.
-6. **Check** — desktop and mobile widths, every link, and that the new page has no
+6. **Press kit** — add a factsheet block for the new game to `press/index.html` (genre,
+   platform, release date, price, modes, languages, store and video links) and its images to the
+   assets grid. A release with no press kit entry is invisible to anyone writing about it.
+7. **Check** — desktop and mobile widths, every link, and that the new page has no
    `<style>` block and no hardcoded color outside `site.css`.
 
 ## Checklist before pushing
