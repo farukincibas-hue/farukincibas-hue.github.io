@@ -166,7 +166,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .home-hero h1 {
   max-width: 680px;
   margin-bottom: 24px;
-  font-size: clamp(3.25rem, 6.8vw, 6.45rem);
+  font-size: clamp(3.1rem, 6.1vw, 5.8rem);
   font-weight: 850;
   letter-spacing: -0.075em;
   line-height: 0.95;
@@ -184,7 +184,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
   background: linear-gradient(90deg, rgba(19, 125, 245, 0.34), rgba(34, 200, 186, 0.38));
 }
 .home-hero-copy > p:not(.eyebrow) {
-  max-width: 590px;
+  max-width: 540px;
   margin-bottom: 32px;
   color: var(--muted);
   font-size: clamp(1.05rem, 2vw, 1.22rem);
@@ -207,8 +207,8 @@ h1, h2, h3, p, figure { margin-top: 0; }
 }
 .hero-coral {
   position: absolute;
-  top: 15%;
-  right: 0;
+  top: 21%;
+  right: -1%;
   width: 84px;
   height: 84px;
   border-radius: 28px;
@@ -250,13 +250,13 @@ h1, h2, h3, p, figure { margin-top: 0; }
   margin-bottom: 42px;
 }
 .work-heading h2 {
-  max-width: 760px;
+  max-width: 700px;
   margin-bottom: 0;
-  font-size: clamp(2.7rem, 5.7vw, 5.6rem);
-  letter-spacing: -0.07em;
-  line-height: 0.98;
+  font-size: clamp(2.4rem, 4.7vw, 4.5rem);
+  letter-spacing: -0.065em;
+  line-height: 1;
 }
-.work-heading p { max-width: 390px; margin-bottom: 7px; color: #9cb1c8; }
+.work-heading p { max-width: 400px; margin-bottom: 8px; color: #9cb1c8; font-size: 1.02rem; }
 .portfolio-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .product-card {
   overflow: hidden;
@@ -269,10 +269,10 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .product-card-featured {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1.14fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(430px, 1.2fr);
   align-items: stretch;
 }
-.product-card-copy { padding: clamp(34px, 5vw, 64px); }
+.product-card-copy { padding: clamp(30px, 3.6vw, 50px); }
 .product-status {
   display: inline-flex;
   align-items: center;
@@ -300,8 +300,16 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .product-card-copy > p { max-width: 580px; color: #b8c6d6; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 30px; }
 .tag { border: 1px solid rgba(255, 255, 255, 0.13); border-radius: 99px; padding: 7px 12px; color: #b8c6d6; font-size: 0.75rem; font-weight: 700; }
-.product-card-media { position: relative; min-width: 0; min-height: 440px; background: #06101d; }
-.product-card-media > img { width: 100%; height: 100%; object-fit: contain; }
+.product-card-media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  padding: 24px 0;
+  background: radial-gradient(circle at 50% 46%, #0c1f34, #06101d 74%);
+}
+.product-card-media > img { width: 100%; height: 100%; max-height: 460px; object-fit: contain; }
 .product-card-media::after {
   content: "Featured release";
   position: absolute;
@@ -319,8 +327,8 @@ h1, h2, h3, p, figure { margin-top: 0; }
 
 /* Standard (non-featured) catalog cards: media on top, copy below. */
 .product-card:not(.product-card-featured) { display: flex; flex-direction: column; }
-.product-card:not(.product-card-featured) .product-card-media { order: -1; min-height: 0; aspect-ratio: 16 / 10; }
-.product-card:not(.product-card-featured) .product-card-media > img { object-fit: cover; }
+.product-card:not(.product-card-featured) .product-card-media { order: -1; display: block; min-height: 0; padding: 0; aspect-ratio: 16 / 10; }
+.product-card:not(.product-card-featured) .product-card-media > img { max-height: none; object-fit: cover; }
 .product-card:not(.product-card-featured) .product-card-media::after { content: none; }
 .product-card:not(.product-card-featured) .product-card-copy { padding: clamp(26px, 3vw, 36px); }
 .product-card:not(.product-card-featured) .product-title-row h3 { font-size: clamp(1.7rem, 2.6vw, 2.3rem); }
@@ -461,7 +469,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .site-footer::after {
   content: "";
   position: absolute;
-  right: 17%;
+  right: clamp(64px, 16%, 210px);
   top: 34px;
   width: 72px;
   height: 72px;
@@ -523,8 +531,18 @@ h1, h2, h3, p, figure { margin-top: 0; }
 
 @media (max-width: 620px) {
   :root { --wrap: min(calc(100% - 28px), 1180px); }
-  .site-header { padding-top: 15px; }
-  .site-nav { display: none; }
+  .site-header { flex-wrap: wrap; gap: 12px 18px; padding-top: 15px; }
+  .brand { font-size: 0.95rem; }
+  .brand img { width: 38px; height: 38px; border-radius: 11px; }
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+  }
+  .site-nav a { font-size: 0.84rem; }
   .home-hero { min-height: 0; padding: 65px 0 80px; }
   .home-hero h1 { margin-bottom: 20px; font-size: clamp(3rem, 13vw, 3.4rem); }
   .home-hero-copy, .hero-art, .product-card-copy, .product-page-copy { min-width: 0; }
