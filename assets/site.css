@@ -483,7 +483,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
 }
 .press-assets { display: grid; align-items: start; gap: 14px; }
 .press-assets-shots { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.press-assets-art { grid-template-columns: minmax(0, 2.1fr) minmax(0, 0.9fr); }
+.press-assets-art { grid-template-columns: minmax(0, 720px); }
 .press-assets-studio { grid-template-columns: minmax(0, 210px); margin-top: 24px; }
 .press-asset {
   overflow: hidden;
@@ -497,7 +497,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .press-asset img { width: 100%; height: auto; }
 .press-asset figcaption { padding: 10px 13px 12px; color: var(--muted); font-size: 0.78rem; font-weight: 650; }
 .press-asset:hover { border-color: var(--blue); }
-.press-asset-icon img, .press-asset-logo img { padding: 26px; background: var(--canvas); }
+.press-asset-logo img { padding: 26px; background: var(--canvas); }
 .press-game { margin-top: 26px; }
 .press-game + .press-game { border-top: 1px solid var(--line); margin-top: 46px; padding-top: 42px; }
 .press-game h3 { margin-bottom: 2px; font-size: clamp(1.6rem, 2.6vw, 2.2rem); letter-spacing: -0.04em; }
