@@ -30,6 +30,9 @@ Legal pages live in a separate repo, `wealthbound-legal`, and are served under
   page and inside the footer `Products` column — never in the global footer row.
 - Absolute, root-relative paths (`/assets/...`, `/products/<slug>/`) everywhere, so pages work
   at any depth.
+- Anything that names a single game — hero art, the featured card, the homepage `og:image` —
+  belongs to the flagship of the moment, not to the site. Revisit those three when a new
+  flagship ships.
 
 ## Adding a new product
 
@@ -45,10 +48,12 @@ Legal pages live in a separate repo, `wealthbound-legal`, and are served under
    `Products` column, in **every** page's footer (`index.html` and each `products/*/index.html`).
    On the product's own page mark its link `aria-current="page"`.
 5. **About section** — update the `Latest release` / `In progress` lines in `.studio-facts` on the
-   homepage so the studio status stays true.
-6. **Press kit** — add a factsheet block for the new game to `press/index.html` (genre,
-   platform, release date, price, modes, languages, store and video links) and its images to the
-   assets grid. A release with no press kit entry is invisible to anyone writing about it.
+   homepage. The about copy itself is written at studio level on purpose: it must keep working
+   with three games in the catalog, so keep game-specific stories on the product pages.
+6. **Press kit** — in `press/index.html`, copy one `.press-game` block inside the `Games`
+   section and swap its facts and images. Studio-level material (description, factsheet, logo)
+   stays in the section above and must not gain game-specific wording. A release with no press
+   kit entry is invisible to anyone writing about it.
 7. **Check** — desktop and mobile widths, every link, and that the new page has no
    `<style>` block and no hardcoded color outside `site.css`.
 
