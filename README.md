@@ -20,6 +20,11 @@ main-mode-studio-logo.png   Brand mark used in header, footer and favicon
 Legal pages live in a separate repo, `wealthbound-legal`, and are served under
 `/wealthbound-legal/`. Keep product privacy links pointing there.
 
+DynamiteArena's legal pages (`privacy-policy.html`, `terms-of-service.html`) live in this repo
+under `/dynamitearena-legal/`, served at the same kind of address. Their source is the game repo
+(`docs/legal/`); edit there first, then copy here. The game links to both addresses
+(`scripts/core/app_links.gd`), so never rename or move them.
+
 ## Rules that keep the site from breaking as the catalog grows
 
 - The homepage stays a **studio page**: hero, catalog of cards, about, footer. Product detail
