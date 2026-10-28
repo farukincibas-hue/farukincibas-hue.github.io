@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DynamiteArena — Delete Your Account</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0b1220;
+        --panel: #111a2e;
+        --text: #e6ecf5;
+        --muted: #9fb0c7;
+        --accent: #f2c14e;
+        --border: rgba(255, 255, 255, 0.08);
+        --link: #7bb0ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+        font-size: 17px;
+      }
+      main { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+      header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 12px; }
+      h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.02em; }
+      h2 { font-size: 21px; margin: 40px 0 10px; color: var(--accent); }
+      h3 { font-size: 17px; margin: 22px 0 6px; }
+      .muted { color: var(--muted); font-size: 15px; }
+      a { color: var(--link); }
+      ul { padding-left: 22px; }
+      li { margin: 6px 0; }
+      table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; display: block; overflow-x: auto; }
+      th, td { border: 1px solid var(--border); padding: 9px 11px; text-align: left; vertical-align: top; }
+      th { background: var(--panel); color: var(--accent); font-weight: 600; }
+      .contact { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin-top: 16px; }
+      footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Delete your DynamiteArena account</h1>
+        <p class="muted">DynamiteArena by Main Mode Studio (Ömer Faruk İncibaş) &middot; Last updated: 28 October 2026</p>
+      </header>
+
+      <p>
+        DynamiteArena creates an anonymous player account the first time you play online. It has no
+        password and no email address: your phone proves it owns the account with a key stored only on
+        that phone. You can delete the account and the data tied to it at any time, in the game or by
+        email. There is no waiting period and no deactivation step: the account is deleted.
+      </p>
+
+      <h2>1. Delete it in the game</h2>
+      <ol>
+        <li>Open DynamiteArena and tap <strong>Settings</strong> (the gear).</li>
+        <li>Open the <strong>About</strong> tab, then <strong>Player account</strong> &rarr; <strong>Open</strong>.</li>
+        <li>Tap <strong>Delete</strong>, read what will be deleted, then <strong>hold</strong> the red button until it fills.</li>
+      </ol>
+      <p>
+        The phone needs an internet connection. When our server confirms the deletion, the game also
+        removes the account key, the account record and its saved copies from your phone and starts
+        again from the first screen.
+      </p>
+
+      <h2>2. Ask us by email</h2>
+      <p>
+        If you can't open the game (for example you uninstalled it), email us. You don't need to
+        reinstall anything.
+      </p>
+      <div class="contact">
+        <p>
+          <strong>To:</strong> <a href="mailto:farukincibas@gmail.com?subject=DynamiteArena%20account%20deletion">farukincibas@gmail.com</a><br />
+          <strong>Subject:</strong> DynamiteArena account deletion<br />
+          <strong>Include:</strong> your <strong>Player ID</strong> (such as #1234) and your
+          <strong>support code</strong>. Both are shown in Settings &rarr; About &rarr; Player account.
+        </p>
+      </div>
+      <p>
+        The Player ID alone is not enough, because anyone can see it; the support code shows the
+        account is yours. If you no longer have the support code, tell us everything you remember
+        (Player ID, roughly when you played, your player name) and we will check the request by hand. We
+        may ask a follow-up question before deleting. We answer within 30 days, usually much sooner.
+      </p>
+
+      <h2>3. What is deleted</h2>
+      <ul>
+        <li>The player account: its ID, the public part of the phone's key, the hashed support code,
+          age group, terms acceptance and player name.</li>
+        <li>Everything the account holds on our server: gold, diamonds, owned characters and items,
+          Campaign rewards, daily gift progress and its operation history.</li>
+      </ul>
+
+      <h2>4. What is kept, and for how long</h2>
+      <ul>
+        <li><strong>A deletion record</strong>: a one-way hash of the deleted account's ID and the
+          date. It holds nothing that identifies you; we keep it so that restoring a backup can never
+          bring a deleted account back.</li>
+        <li><strong>Backups</strong>: server backups are kept for at most 30 days. If a backup is
+          restored, every deletion in the deletion record is applied again before the game goes back
+          online.</li>
+        <li><strong>Purchase records</strong>: if in-app purchases are offered and you made one, the
+          store's purchase record is kept without the link to your account, where tax, refund or
+          chargeback rules require it.</li>
+        <li><strong>On your phone</strong>: Campaign levels you have cleared and your settings stay on
+          the phone until you uninstall the game. They were never sent to our server.</li>
+      </ul>
+
+      <h2>5. Accounts we delete on our own</h2>
+      <p>
+        Accounts that were created but never used again are deleted after 30 days. Accounts that have
+        not connected for 24 months are deleted.
+      </p>
+
+      <footer>
+        &copy; 2026 Main Mode Studio. See also the <a href="privacy-policy.html">Privacy Policy</a>
+        and the <a href="terms-of-service.html">Terms of Service</a>.
+      </footer>
+    </main>
+  </body>
+</html>
