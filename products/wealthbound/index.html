@@ -8,6 +8,9 @@
   <meta name="theme-color" content="#071321" />
   <link rel="canonical" href="https://mainmodestudio.com/products/wealthbound/" />
   <link rel="icon" type="image/png" href="/main-mode-studio-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" />
   <link rel="stylesheet" href="/assets/site.css" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Wealthbound — Main Mode Studio" />
@@ -20,133 +23,168 @@
 
   <header class="site-header">
     <a class="brand" href="/" aria-label="Main Mode Studio home">
-      <img src="/main-mode-studio-logo.png" alt="" width="44" height="44" />
+      <img src="/main-mode-studio-logo.png" alt="" width="40" height="40" />
       <span>Main Mode Studio</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/#work">All work</a>
+      <a href="/#games" aria-current="true">Games</a>
       <a href="/#studio">Studio</a>
-      <a href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube</a>
+      <a href="/#faq">FAQ</a>
+      <a class="nav-pill" href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="product-page-hero" aria-labelledby="product-title">
-      <div class="product-page-grid">
-        <div class="product-page-copy">
-          <p class="product-status">Available now on Android</p>
-          <div class="product-page-title">
-            <img class="product-icon" src="/assets/wealthbound-icon.webp" alt="Wealthbound app icon" width="256" height="256" />
-            <div>
-              <h1 id="product-title">Wealthbound</h1>
-              <p>Money Board Game</p>
-            </div>
-          </div>
-          <h2>Outrun your expenses. Build your freedom.</h2>
-          <p>Draw a career, move through an unpredictable board and build income-producing assets. Reach financial freedom before your rival—or before life sends your plan off course.</p>
-          <div class="tag-row" aria-label="Product details">
-            <span class="tag">Free to play</span>
-            <span class="tag">Solo or invite a rival</span>
-            <span class="tag">6 languages</span>
-          </div>
-          <div class="button-row">
-            <a class="button button-light" href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="https://www.youtube.com/watch?v=weS8EK2cBG4" target="_blank" rel="noopener">Watch gameplay <span aria-hidden="true">▶</span></a>
+    <section class="product-hero" aria-labelledby="product-title">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/#games">Games</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Wealthbound</span></nav>
+        <p class="chip chip-live">Live on Google Play</p>
+        <div class="product-title">
+          <img src="/assets/wealthbound-icon.webp" alt="Wealthbound app icon" width="76" height="76" />
+          <div>
+            <h1 id="product-title">Wealthbound</h1>
+            <p>Money board game</p>
           </div>
         </div>
-        <div class="feature-frame">
-          <img src="/assets/wealthbound-feature.webp" alt="Wealthbound board around a city at night with the message Beat your rival to freedom" width="1024" height="500" />
+        <p class="product-tagline">Outrun your expenses. Build your freedom.</p>
+        <p class="product-copy">Draw a career, move through an unpredictable board and build income-producing assets. Reach financial freedom before your rival, or before life sends your plan off course.</p>
+        <ul class="tag-row" aria-label="Product details">
+          <li>Free to play</li>
+          <li>Solo or invite a rival</li>
+          <li>6 languages</li>
+          <li>Android</li>
+        </ul>
+        <div class="button-row">
+          <a class="button button-gold" href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://www.youtube.com/watch?v=weS8EK2cBG4" target="_blank" rel="noopener"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 2.2v9.6L11.5 7z"/></svg>Watch gameplay</a>
         </div>
+      </div>
+      <div class="product-stage">
+        <div class="phone phone-back"><img src="/assets/wealthbound-journey.webp" alt="Progress through five chapters in Wealthbound" width="576" height="1024" /></div>
+        <div class="phone phone-front"><img src="/assets/wealthbound-board.webp" alt="Race a rival around the Wealthbound board" width="576" height="1024" /></div>
       </div>
     </section>
 
-    <section class="screens-section" aria-labelledby="screens-title">
-      <div class="section-shell">
-        <div class="screens-heading">
-          <h2 id="screens-title">Every choice changes the run.</h2>
+    <section class="section section-band" aria-labelledby="screens-title">
+      <div class="wrap">
+        <img class="feature-banner" src="/assets/wealthbound-feature.webp" alt="Wealthbound board around a city at night with the message Beat your rival to freedom" width="1024" height="500" loading="lazy" />
+        <div class="section-head">
+          <h2 class="section-title" id="screens-title">Every choice changes the run.</h2>
           <p>Careers, opportunities and setbacks turn each board into a new route toward financial freedom.</p>
         </div>
-        <div class="screens-grid" aria-label="Wealthbound screenshots">
-          <figure class="screen-card"><img src="/assets/wealthbound-board.webp" alt="Race a rival around Wealthbound's board" width="576" height="1024" loading="lazy" /></figure>
-          <figure class="screen-card"><img src="/assets/wealthbound-careers.webp" alt="Receive a career and starting finances" width="576" height="1024" loading="lazy" /></figure>
-          <figure class="screen-card"><img src="/assets/wealthbound-assets.webp" alt="Choose whether to buy an income-producing business" width="576" height="1024" loading="lazy" /></figure>
-          <figure class="screen-card"><img src="/assets/wealthbound-journey.webp" alt="Progress through five chapters in Wealthbound" width="576" height="1024" loading="lazy" /></figure>
+        <ul class="shot-grid" aria-label="Wealthbound screenshots">
+          <li><figure><div class="shot-frame"><img src="/assets/wealthbound-board.webp" alt="" width="576" height="1024" loading="lazy" /></div><figcaption>Race a rival around the board</figcaption></figure></li>
+          <li><figure><div class="shot-frame"><img src="/assets/wealthbound-careers.webp" alt="" width="576" height="1024" loading="lazy" /></div><figcaption>Receive a career and starting finances</figcaption></figure></li>
+          <li><figure><div class="shot-frame"><img src="/assets/wealthbound-assets.webp" alt="" width="576" height="1024" loading="lazy" /></div><figcaption>Decide whether to buy an income-producing business</figcaption></figure></li>
+          <li><figure><div class="shot-frame"><img src="/assets/wealthbound-journey.webp" alt="" width="576" height="1024" loading="lazy" /></div><figcaption>Progress through five chapters</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="run-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How a run works</p>
+            <h2 class="section-title" id="run-title">Race, build, adapt.</h2>
+          </div>
         </div>
-        <div class="feature-points" aria-label="Wealthbound features">
-          <article class="feature-point">
-            <div class="feature-point-number">01 / RACE</div>
-            <h3>Freedom has a finish line</h3>
-            <p>Cover monthly expenses with passive income before your rival gets there.</p>
-          </article>
-          <article class="feature-point">
-            <div class="feature-point-number">02 / BUILD</div>
-            <h3>Make money work for you</h3>
-            <p>Balance cash, debt and assets while every opportunity asks for a trade-off.</p>
-          </article>
-          <article class="feature-point">
-            <div class="feature-point-number">03 / ADAPT</div>
-            <h3>No two runs are the same</h3>
-            <p>New careers, a different mix of businesses and life events you cannot plan for.</p>
-          </article>
-        </div>
-        <div class="product-note">
-          <h3>Why this one exists</h3>
-          <p>Money decides how everyone's life goes, and almost nobody gets to practise it first. Wealthbound is a version you can practise in a few minutes—real rules, real trade-offs, one clear finish line.</p>
+        <ol class="loop-cards">
+          <li class="loop-card"><p class="loop-label">01 / RACE</p><h3>Freedom has a finish line</h3><p>Cover monthly expenses with passive income before your rival gets there.</p></li>
+          <li class="loop-card"><p class="loop-label">02 / BUILD</p><h3>Make money work for you</h3><p>Balance cash, debt and assets while every opportunity asks for a trade-off.</p></li>
+          <li class="loop-card"><p class="loop-label">03 / ADAPT</p><h3>No two runs are the same</h3><p>New careers, a different mix of businesses and life events you cannot plan for.</p></li>
+        </ol>
+        <div class="why-row">
+          <figure class="quote-card">
+            <figcaption>Why this one exists</figcaption>
+            <blockquote>Money decides how everyone's life goes, and almost nobody gets to practise it first. Wealthbound is a version you can practise in a few minutes: real rules, real trade-offs, one clear finish line.</blockquote>
+          </figure>
+          <aside class="glance" aria-labelledby="glance-title">
+            <h2 id="glance-title">At a glance</h2>
+            <dl>
+              <div><dt>Platform</dt><dd>Android, Google Play</dd></div>
+              <div><dt>Price</dt><dd>Free to play</dd></div>
+              <div><dt>Players</dt><dd>Solo, or invite a rival</dd></div>
+              <div><dt>Languages</dt><dd>6</dd></div>
+              <div><dt>Made by</dt><dd>Main Mode Studio</dd></div>
+            </dl>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="product-outro" aria-labelledby="outro-title">
-      <div class="section-shell product-outro-inner">
+    <section class="get-band" aria-labelledby="get-title">
+      <div class="wrap">
         <div>
           <p class="eyebrow">Get the game</p>
-          <h2 id="outro-title">Wealthbound is free on Google Play.</h2>
+          <h2 id="get-title">Wealthbound is free on Google Play.</h2>
         </div>
         <div class="button-row">
-          <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">↗</span></a>
-          <a class="button" href="/#work">All work <span aria-hidden="true">→</span></a>
+          <a class="button button-dark" href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline-dark" href="/#games">All games <span aria-hidden="true">→</span></a>
         </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="more-title">
+      <div class="wrap">
+        <p class="eyebrow" id="more-title">Also from the studio</p>
+        <a class="teaser-card" href="/#dynamitearena">
+          <img src="/assets/dynamitearena-feature.webp" alt="" width="1024" height="500" loading="lazy" />
+          <span class="teaser-body">
+            <span class="chip chip-test">In closed testing</span>
+            <strong>DynamiteArena</strong>
+            <span class="teaser-copy">Throw, bounce and chain dynamite in fast four-player arena battles, or take on the 40-level campaign offline.</span>
+            <span class="teaser-cta">See it on the studio page <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer" id="site-footer">
-    <div class="footer-shell">
+    <div class="wrap">
       <div class="footer-lead">
         <div>
-          <p class="footer-kicker">Stay in the loop</p>
-          <h2>See what we build next.</h2>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>See what we<br />build next.</h2>
         </div>
-        <a class="footer-cta" href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">Follow on YouTube <span aria-hidden="true">↗</span></a>
+        <a class="button button-gold" href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">Follow on YouTube <span aria-hidden="true">↗</span></a>
       </div>
       <div class="footer-main">
         <a class="footer-brand" href="/" aria-label="Main Mode Studio home">
-          <img src="/main-mode-studio-logo.png" alt="" width="54" height="54" loading="lazy" />
-          <span><strong>Main Mode Studio</strong><span>Independent apps and games.</span></span>
+          <img src="/main-mode-studio-logo.png" alt="" width="48" height="48" loading="lazy" />
+          <span><strong>Main Mode Studio</strong><small>Independent games from Türkiye.</small></span>
         </a>
-        <div class="footer-navs">
-          <nav class="footer-nav" aria-label="Explore">
-            <h3>Explore</h3>
-            <a href="/#work">Work</a>
-            <a href="/#studio">Studio</a>
-          </nav>
-          <nav class="footer-nav footer-nav-products" aria-label="Products">
-            <h3>Products</h3>
-            <div class="footer-product">
-              <a href="/products/wealthbound/" aria-current="page">Wealthbound</a>
-              <div class="footer-product-links">
-                <a href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Google Play</a>
-                <a href="https://mainmodestudio.com/wealthbound-legal/privacy-policy.html">Privacy</a>
-              </div>
+        <nav class="footer-nav" aria-label="Games">
+          <h3>Games</h3>
+          <div class="footer-product">
+            <a href="/products/wealthbound/" aria-current="page">Wealthbound</a>
+            <div class="footer-product-links">
+              <a href="https://play.google.com/store/apps/details?id=com.wealthbound.app" target="_blank" rel="noopener">Google Play</a>
+              <a href="https://mainmodestudio.com/wealthbound-legal/privacy-policy.html">Privacy</a>
             </div>
-          </nav>
-          <nav class="footer-nav" aria-label="Connect">
-            <h3>Connect</h3>
-            <a href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube</a>
-            <a href="/press/">Press kit</a>
-            <a href="mailto:farukincibas@gmail.com">Contact</a>
-          </nav>
-        </div>
+          </div>
+          <div class="footer-product">
+            <a href="/#dynamitearena">DynamiteArena</a>
+            <div class="footer-product-links">
+              <a href="/dynamitearena-legal/privacy-policy.html">Privacy</a>
+              <a href="/dynamitearena-legal/terms-of-service.html">Terms</a>
+            </div>
+          </div>
+        </nav>
+        <nav class="footer-nav" aria-label="Studio">
+          <h3>Studio</h3>
+          <a href="/#studio">About</a>
+          <a href="/press/">Press kit</a>
+          <a href="/#faq">FAQ</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Connect">
+          <h3>Connect</h3>
+          <a href="https://www.youtube.com/@MainModeStudio" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.linkedin.com/in/omer-faruk-incibas/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:farukincibas@gmail.com">Contact</a>
+        </nav>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Main Mode Studio</span>
