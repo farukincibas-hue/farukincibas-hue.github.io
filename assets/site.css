@@ -195,16 +195,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .hero-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px 48px; }
 .hero-row > p { flex: 1 1 380px; min-width: 0; max-width: 560px; color: var(--muted); font-size: clamp(1.0625rem, 1.4vw, 1.25rem); }
-.screen-rail {
-  display: flex;
-  gap: 16px;
-  margin-top: clamp(40px, 5vw, 64px);
-  padding-bottom: 10px;
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-.screen-rail li { flex: 0 0 auto; }
-.screen-rail img { width: auto; height: clamp(150px, 15vw, 220px); border-radius: 20px; object-fit: cover; }
 
 /* Game features on the home page */
 .game-feature { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 40px 64px; scroll-margin-top: 24px; }
