@@ -44,14 +44,16 @@
     <main>
       <header>
         <h1>Privacy Policy</h1>
-        <p class="muted">DynamiteArena &middot; Last updated: 15 November 2026</p>
+        <p class="muted">DynamiteArena &middot; Last updated: 17 November 2026</p>
       </header>
 
       <p>
         This Privacy Policy explains how the mobile game <strong>DynamiteArena</strong> ("the game",
         "we", "us") handles information when you play it. DynamiteArena has a single-player Campaign
-        and an optional online Multiplayer mode. You never sign in: the game creates an anonymous
-        player account for you the first time it uses our servers (see below). We never ask for your
+        and an optional online Multiplayer mode. You never need to sign in: the game creates an
+        anonymous player account for you the first time it uses our servers (see below). For players
+        aged 18 and over who use Google Play Games, that account is also linked to their Play Games
+        profile (see <a href="#play-games">Google Play Games</a>). We never ask for your
         real name, email address or phone number. If you live in Türkiye, our
         <a href="privacy-policy-tr.html">Turkish privacy notice (Aydınlatma Metni)</a> explains the
         same processing under the KVKK.
@@ -169,6 +171,13 @@
             players come back. The time-zone offset runs the daily gift, quests and other daily limits
             on your local day. All of these are deleted with the account.</td>
         </tr>
+        <tr>
+          <td>Google Play Games link (players aged 18 and over who are signed in to Play Games): a
+            one-way code made from your Play Games player ID, when the link was made, whether you
+            unlinked it, and which phones joined the account through it</td>
+          <td>To bring your account back on a new phone. See <a href="#play-games">Google Play
+            Games</a> below.</td>
+        </tr>
       </table>
 
       <h3>Buying diamonds (Google Play)</h3>
@@ -190,7 +199,11 @@
           <td>The purchase token Google Play creates for the purchase, and the random account code</td>
           <td>To confirm the purchase with Google Play, to make sure it belongs to your account, and to
             stop the same purchase from being used twice. The token itself is deleted once the
-            purchase is confirmed; we keep only a one-way fingerprint of it.</td>
+            purchase is confirmed; we keep only a one-way fingerprint of it. If a phone moves from one
+            player account to another (for example when your account comes back through Google Play
+            Games), the random code of the account it leaves is also kept with the account it joins,
+            so that a purchase still being processed reaches you; it is deleted with that
+            account.</td>
         </tr>
       </table>
 
@@ -244,24 +257,83 @@
           make in Google's consent tool (below).</li>
       </ul>
 
-      <h3>Google Play Games &mdash; players aged 18 and over only</h3>
+      <h3 id="play-games">Google Play Games &mdash; players aged 18 and over only</h3>
       <p>
         For players aged 18 and over, the game uses Google Play Games Services. When the game starts,
         Play Games signs you in with the Google Play Games profile of the Google account your phone
         uses for games, if you have one; the game never asks you to create a profile. Signing in makes
         your Play Games profile (your gamer name and avatar) available to the game, but the game does
-        not read it and sends nothing from it to our servers. The Play Games software in the game also
-        sends Google analytics and diagnostic data, which Google uses to keep its software stable and
-        to improve its products. Google handles this data under its own policies:
+        not read your gamer name or avatar, and they never reach our servers. What the game does with
+        Play Games is link your player account to your profile, so that it can come back on a new
+        phone.
+      </p>
+      <p><strong>Linking your player account</strong></p>
+      <ul>
+        <li><strong>When.</strong> If you are signed in to Play Games, the game links your player
+          account to your profile by itself, at most once a day. Before the first link it shows you a
+          one-time notice about it. You can also link at any time with <strong>Connect</strong> in
+          Settings &rarr; About &rarr; Player account &rarr; Google Play Games.</li>
+        <li><strong>What we keep.</strong> The game asks Play Games for a one-time code and sends it to
+          our server. Our server sends the code to Google, and Google answers with the Play Games player
+          ID of your profile for this game. We do not store that ID: we keep only a one-way code made
+          from it with a secret key that exists only on our server, the player account it is linked to,
+          when the link was made and which phones joined the account through it. We never receive your
+          gamer name, avatar, email address or any other detail of your Google account, we keep no
+          Google sign-in token, and our server never writes the code or your player ID to its logs. On
+          your phone, the game keeps whether you have seen the notice, whether your account is linked
+          and the day of its last automatic try.</li>
+        <li><strong>A new phone.</strong> When you sign in to the same Play Games profile on a new
+          phone, or after reinstalling the game, that phone joins your linked account, and your gold,
+          diamonds, characters, league, mastery and Campaign progress come back. The account gets a new
+          support code. If that phone had already started a new account with no progress yet, that
+          empty account is deleted.</li>
+        <li><strong>A profile linked to another account.</strong> We never merge two accounts. If your
+          Play Games profile is already linked to another player account and the account on your phone
+          already has progress, the game changes nothing by itself: you choose. The game may ask you
+          once, if the account on your phone was created in the last 7 days; otherwise use
+          <strong>Choose</strong> in Settings. The window shows both accounts side by side: Player ID,
+          Campaign stars and furthest level, gold, diamonds and when each was last played.
+          <strong>Keep this one</strong> links your profile to the account on this phone; the other
+          account is not deleted, but it no longer comes back with Play Games. <strong>Switch to this
+          one</strong> moves this phone to the other account; you lose the account on this phone, and
+          it is deleted if no other phone uses it. Our server holds your open choice in its memory for
+          at most 10 minutes. If the account you would give up has real-money purchases, our support
+          team finishes the change by email. If, in that case, you chose to keep the account on this
+          phone, we store a support request (the two accounts, the one-way code of your player ID and
+          when) for at most 30 days, so that support can check the profile is yours.</li>
+        <li><strong>Unlinking.</strong> Tap <strong>Unlink</strong> in Settings &rarr; About &rarr;
+          Player account &rarr; Google Play Games. We delete the link and keep on your account only a
+          mark that you unlinked, so the game does not link it again by itself; <strong>Connect</strong>
+          links it again. Signing out of Play Games on your phone does not remove the link. Without the
+          link, your account lives only on this phone: if you delete the game or lose the phone, it
+          cannot come back.</li>
+        <li><strong>Age.</strong> If your age group on our server drops below 18, the link is removed
+          at the same time, as if you had unlinked. Players under 18 are never linked: their account
+          lives only on their phone, and only our support team can move it to a new phone, using the
+          account's support code.</li>
+        <li><strong>How long.</strong> The link is kept while your account is linked. It is deleted
+          when you unlink, when your profile is linked to another player account, when your age group
+          drops below 18 and when the account is deleted (by you, or by us after 24 months without a
+          connection). Server backups keep it for at most 30 days.</li>
+        <li><strong>Why.</strong> We use the link only to give your account back to you. Play Games
+          data is never used for advertising and never goes to AdMob or Google Analytics.</li>
+      </ul>
+      <p>
+        <strong>What Google receives.</strong> The game uses its own player names, not your Play Games
+        identity. Even so, while you are signed in, your gameplay information in this game (for
+        example, that you play it) is sent to Google, associated with your Play Games profile and may
+        be viewable in different Google products, such as your Play Games profile; who can see it
+        depends on your profile's visibility setting (Everyone, Friends only or Only you). The Play
+        Games software in the game also sends Google analytics and diagnostic data, which Google uses
+        to keep its software stable and to improve its products. Google decides how it uses this data,
+        as a separate controller, under its own policies:
         <a href="https://developer.android.com/games/pgs/data-collection">Play Games Services data collection</a>,
         <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
       </p>
       <ul>
         <li><strong>For players under 18 the game does not start Google Play Games Services.</strong></li>
-        <li>Our own error reports (see above) may record whether Play Games started and whether
-          sign-in worked, never who you are.</li>
-        <li>Play Games is the base for features we plan to add, such as moving your player account to
-          a new phone. We will update this policy before any of them sends Play Games data to us.</li>
+        <li>Our own error reports (see above) may record whether Play Games started, whether sign-in
+          worked and how a link attempt ended, never who you are.</li>
         <li>To choose which Google account signs you in to games, or to sign out of all games, open
           your phone's Settings &rarr; Google &rarr; All services &rarr; Play Games, or in the Play
           Store tap your profile picture, then Settings &rarr; General &rarr; Google Play Games
@@ -270,7 +342,8 @@
           profile settings or at
           <a href="https://play.google.com/games/profile">play.google.com/games/profile</a>. Deleting
           your player account in the game does not delete your Play Games profile, and deleting your
-          Play Games data does not delete your player account.</li>
+          Play Games data does not delete your player account or remove the link; unlink in the game
+          for that.</li>
       </ul>
 
       <h3>Your privacy choices</h3>
@@ -311,7 +384,8 @@
         <li>To protect players and the game from cheating, abuse and attacks.</li>
         <li>To find and fix errors in the game (error reports).</li>
         <li>To show the optional rewarded ad you choose to watch.</li>
-        <li>For players aged 18 and over, to sign you in to Google Play Games.</li>
+        <li>For players aged 18 and over, to sign you in to Google Play Games and to link your player
+          account to your Play Games profile, so that it can come back on a new phone.</li>
         <li>To improve the game: to see where players get stuck (level progress events) and how many
           come back (connection days) and, for players aged 18 and over, which levels are too hard or
           too easy, whether rewards, prices and the Shop are balanced, and whether players come back
@@ -324,7 +398,8 @@
         purchases, and answering your privacy requests); and our legitimate interest in keeping the game
         secure and working, in improving it and in funding a free game with an optional rewarded ad
         (abuse limits, player reports, error reports, level progress events, connection days,
-        non-personalised ads, the Google Play Games sign-in for players aged 18 and over and, outside
+        non-personalised ads, the Google Play Games sign-in and account link for players aged 18 and
+        over and, outside
         the European Economic Area, the United Kingdom and Switzerland, usage statistics).
         Outside those regions we do not base any processing on consent, and the game shows no consent
         window. In the EEA, the United Kingdom and Switzerland, personalised advertising and usage
@@ -357,6 +432,9 @@
         <li>Level results are deleted after 21 days. Level progress events, connection days, the
           last connection time and the time-zone offset are deleted with the account.</li>
         <li>Usage statistics are kept by Google Analytics for at most 14 months.</li>
+        <li>The Google Play Games link is kept while your account is linked and deleted as described
+          under <a href="#play-games">Google Play Games</a>. A support request for a change between two
+          accounts is deleted after at most 30 days.</li>
         <li>Google keeps your Play Games profile and the data the Play Games software sends it under
           its own policies; you can delete your Play Games data as described above.</li>
         <li>Error reports are deleted 30 days after the error was last seen, and with the account.</li>
@@ -372,7 +450,8 @@
         DynamiteArena can be played by all ages. The age screen lets us treat younger players
         differently: players under 13 get child-directed advertising and are not invited to send
         feedback by email, and players under 18 are never shown personalised ads, no usage
-        statistics are sent for them and Google Play Games is not started for them. Parents can make
+        statistics are sent for them and Google Play Games is not started for them, so their account
+        is never linked to a Play Games profile. Parents can make
         every purchase need their approval with Google Play's purchase approval settings (for example
         Google Family Link). If you are a parent or guardian and want your child's online account
         deleted, contact us (see section 6 for what to include).
@@ -396,8 +475,9 @@
           18 and over, outside the EEA, the United Kingdom and Switzerland);</li>
         <li>change your advertising and usage-statistics choices in Settings &rarr; About &rarr; Ad
           privacy choices (in the EEA, the United Kingdom and Switzerland);</li>
-        <li>sign out of Google Play Games or delete your Play Games data (players aged 18 and over;
-          see <em>Google Play Games</em> above);</li>
+        <li>unlink your player account from Google Play Games in Settings &rarr; About &rarr; Player
+          account &rarr; Google Play Games, sign out of Google Play Games or delete your Play Games
+          data (players aged 18 and over; see <a href="#play-games">Google Play Games</a> above);</li>
         <li>reset your advertising ID in your device settings;</li>
         <li>delete everything stored on your phone by uninstalling the game.</li>
       </ul>
