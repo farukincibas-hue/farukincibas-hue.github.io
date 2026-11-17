@@ -159,8 +159,13 @@
             network). Our lobby server holds it in memory while you are connected. For the new-account
             limit, the account service receives only a one-way code made from it with a key that
             changes every day and exists only in the lobby server's memory; the service keeps that code
-            in memory until a day has passed since the last new account from that network. Your IP address is never written to your account, and we do
-            not use it to locate you.</td>
+            in memory until a day has passed since the last new account from that network. To count how
+            many players connect from each country and how far they are from our server, the lobby server
+            also looks up your country in an offline list (<a href="https://db-ip.com">IP Geolocation by
+            DB-IP</a>; no one else is asked) and measures how long a message takes to reach our server and
+            come back. Only daily totals are kept, for example &ldquo;40 players from Turkey today, 3 of them
+            150&nbsp;ms or more away&rdquo;. Your IP address and your country are never written to your
+            account, and we do not use them to locate you more precisely than your country.</td>
         </tr>
         <tr>
           <td>Connection times: when your account (and each phone key) last connected, the days (in
