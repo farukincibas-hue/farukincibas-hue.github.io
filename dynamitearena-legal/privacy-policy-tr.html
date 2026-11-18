@@ -45,7 +45,7 @@
     <main>
       <header>
         <h1>Aydınlatma Metni</h1>
-        <p class="muted">DynamiteArena &middot; Kişisel verilerin korunması (KVKK) &middot; Son güncelleme: 17 Kasım 2026</p>
+        <p class="muted">DynamiteArena &middot; Kişisel verilerin korunması (KVKK) &middot; Son güncelleme: 18 Kasım 2026</p>
       </header>
 
       <p>
@@ -201,9 +201,10 @@
             oyuncularda): Google Play Games oyuncu kimliğinden üretilmiş, geri çevrilemeyen bir kod,
             bağın ne zaman kurulduğu, bağı kaldırıp kaldırmadığın ve hesaba bu bağ sayesinde katılan
             telefonlar</td>
-          <td>Hesabını yeni telefonda geri getirmek. Ayrıntısı aşağıda,
-            <a href="#play-games">Google Play Games</a> bölümünde.</td>
-          <td>(f) Meşru menfaat: hesabını yeni telefonda geri getirmek</td>
+          <td>Hesabını yeni telefonda geri getirmek ve başarımlarını kendi Google Play Games profiline
+            göndermek. Ayrıntısı aşağıda, <a href="#play-games">Google Play Games</a> bölümünde.</td>
+          <td>(f) Meşru menfaat: hesabını yeni telefonda geri getirmek ve başarımlarını Google Play
+            Games profilinde açmak</td>
         </tr>
       </table>
 
@@ -297,14 +298,17 @@
         Play Games o profille oturum açar; oyun senden profil oluşturmanı istemez. Oturum açılınca
         Google Play Games profilin (oyuncu adın ve profil resmin) oyuna açılır, ama oyun oyuncu adını ve
         profil resmini okumaz; bunlar sunucularımıza hiç gelmez. Oyunun Google Play Games ile yaptığı iş,
-        oyuncu hesabını profiline bağlamaktır: böylece hesabın yeni telefonda geri gelir.
+        oyuncu hesabını profiline bağlamaktır: böylece hesabın yeni telefonda geri gelir ve başarımların
+        o profilde açılır.
       </p>
       <p><strong>Oyuncu hesabını bağlama</strong></p>
       <ul>
         <li><strong>Ne zaman.</strong> Google Play Games'te oturumun açıksa oyun, oyuncu hesabını
           profiline kendiliğinden, günde en çok bir kez bağlar. İlk bağlamadan önce bunu anlatan bir
           bildirimi bir kez gösterir. İstediğin zaman Ayarlar &rarr; Hakkında &rarr; Oyuncu hesabı
-          &rarr; Google Play Games bölümündeki <strong>Bağla</strong> düğmesiyle de bağlayabilirsin.</li>
+          &rarr; Google Play Games bölümündeki <strong>Bağla</strong> düğmesiyle de bağlayabilirsin.
+          Hesabın bağlandıktan sonra oyun, başarımlarını güncellemeden önce bağı günde en çok bir kez
+          sunucumuza doğrulatır (aşağıda <strong>Başarımlar</strong>).</li>
         <li><strong>Ne tutuyoruz.</strong> Oyun Google Play Games'ten tek kullanımlık bir kod alır ve
           sunucumuza gönderir. Sunucumuz kodu Google'a gönderir; Google da profilinin bu oyundaki Google
           Play Games oyuncu kimliğini bildirir. Bu kimliği saklamayız: yalnız ondan, sadece sunucumuzda
@@ -313,11 +317,23 @@
           Oyuncu adını, profil resmini, e-posta adresini ya da Google hesabının başka bir bilgisini
           hiçbir zaman almayız; Google oturum jetonu saklamayız; sunucumuz kodu ve oyuncu kimliğini
           kayıtlarına yazmaz. Oyun telefonunda da bildirimi görüp görmediğini, hesabının bağlı olup
-          olmadığını ve son kendiliğinden denemenin gününü tutar.</li>
+          olmadığını, son kendiliğinden bağlama ve doğrulamanın günlerini ve başarımlar için Google
+          Play Games'e hangilerini gönderdiğini, sunucumuzun bağı en son ne zaman doğruladığını ve bağın
+          ne zaman kurulduğunu tutar.</li>
         <li><strong>Yeni telefon.</strong> Yeni telefonda ya da oyunu yeniden kurduğunda aynı Google Play
           Games profiliyle oturum açarsan o telefon bağlı hesabına katılır; altının, elmasların,
           karakterlerin, ligin, ustalığın ve Macera ilerlemen geri gelir. Hesabın yeni bir destek kodu
           alır. O telefon henüz ilerlemesi olmayan yeni bir hesap açmışsa bu boş hesap silinir.</li>
+        <li><strong>Başarımlar.</strong> Oyunun başarımları Google Play Games profilinde de tutulur.
+          Oyuncu hesabın bağlıysa ve oturumun açıksa oyun ulaştığın başarımları açar, sayarak ilerleyen
+          başarımlarda da ilerlemeni gönderir (örneğin 60 yıldızın 45'i). Bunu yalnız menüden yapar ve
+          yalnız, sunucumuzun son bir gün içinde oturum açtığın profilin hesabına bağlı profil olduğunu
+          doğruladığı telefonda yapar. Bu doğrulama için oyun sunucumuza günde en çok bir kez yeni bir
+          tek kullanımlık kod gönderir; sunucumuz onu yukarıda anlatıldığı gibi Google'a doğrulatır ve
+          hesabında hiçbir şeyi değiştirmez. Başarımlarını sunucumuz ilerlemenden hesaplar; Google'a
+          kendisi hiçbir şey göndermez. Bağı kaldırdığında ya da oyuncu hesabını sildiğinde başarımlar
+          Google Play Games profilinde kalır; onları Google Play Games profil ayarlarında bu oyunun
+          Google Play Games verilerini silerek kaldırabilirsin.</li>
         <li><strong>Profil başka bir hesaba bağlıysa.</strong> İki hesabı hiçbir zaman birleştirmeyiz.
           Google Play Games profilin başka bir oyuncu hesabına bağlıysa ve telefonundaki hesapta ilerleme
           varsa oyun kendiliğinden hiçbir şeyi değiştirmez; seçimi sen yaparsın. Telefonundaki hesap son
@@ -346,16 +362,19 @@
           başka bir oyuncu hesabına bağlandığında, yaş grubun 18'in altına indiğinde ve hesap
           silindiğinde (senin isteğinle ya da 24 ay bağlanmadığı için bizim tarafımızdan) silinir.
           Sunucu yedeklerinde en çok 30 gün kalır.</li>
-        <li><strong>Amaç ve hukuki sebep.</strong> Bağı yalnız hesabını sana geri vermek için
-          kullanırız; Google Play Games verileri reklamda kullanılmaz, AdMob'a ya da Google Analytics'e
-          gitmez. Hukuki sebep: (f) meşru menfaat, yani 18 yaş ve üstündeki oyunculara Google Play Games
-          oturumunu sunma ve hesaplarını (satın aldıkları elmaslar dahil) yeni telefonda geri getirme
-          menfaatimiz. Bağı istediğin zaman kaldırabilirsin.</li>
+        <li><strong>Amaç ve hukuki sebep.</strong> Bağı yalnız hesabını sana geri vermek ve
+          başarımlarının kendi Google Play Games profiline gitmesini sağlamak için kullanırız; Google
+          Play Games verileri reklamda kullanılmaz, AdMob'a ya da Google Analytics'e gitmez. Hukuki
+          sebep: (f) meşru menfaat, yani 18 yaş ve üstündeki oyunculara Google Play Games oturumunu
+          sunma, hesaplarını (satın aldıkları elmaslar dahil) yeni telefonda geri getirme ve
+          başarımlarını Google Play Games profillerinde açma menfaatimiz. Bağı istediğin zaman
+          kaldırabilirsin.</li>
       </ul>
       <p>
         <strong>Google'a gidenler.</strong> Oyun, Google Play Games kimliğin yerine kendi oyuncu
         adlarını kullanır. Yine de oturumun açıkken bu oyundaki oyun bilgilerin (örneğin bu oyunu
-        oynadığın) Google'a gönderilir, Google Play Games profilinle ilişkilendirilir ve Google Play
+        oynadığın ve açtığın başarımlar) Google'a gönderilir, Google Play Games profilinle
+        ilişkilendirilir ve Google Play
         Games profilin gibi farklı Google ürünlerinde görünebilir; kimin görebileceği profilinin
         görünürlük ayarına (herkes, yalnız arkadaşların ya da yalnız sen) bağlıdır. Oyuna eklenmiş
         Google Play Games yazılımı ayrıca Google'a analiz ve teşhis verileri gönderir; Google bunları
@@ -368,8 +387,9 @@
         <li><strong>18 yaş altındaki oyuncularda oyun Google Play Games hizmetlerini hiç
           başlatmaz.</strong></li>
         <li>Oyunun kendi hata kayıtları (yukarıda) Google Play Games'in başlayıp başlamadığını, oturum
-          açmanın işleyip işlemediğini ve bir bağlama denemesinin nasıl sonuçlandığını kaydedebilir; kim
-          olduğunu hiçbir zaman kaydetmez.</li>
+          açmanın işleyip işlemediğini ve bir bağlama denemesinin, bir bağ doğrulamasının ya da bir
+          başarım güncellemesinin nasıl sonuçlandığını kaydedebilir; kim olduğunu hiçbir zaman
+          kaydetmez.</li>
         <li>Oyunlarda hangi Google hesabıyla oturum açılacağını seçmek ya da bütün oyunlarda oturumu
           kapatmak için telefonunun Ayarlar &rarr; Google &rarr; Tüm Hizmetler &rarr; Google Play
           Games bölümüne ya da Play Store'da profil simgene dokunup Ayarlar &rarr; Genel &rarr; Google
@@ -418,8 +438,8 @@
           oyunu güvenli ve çalışır tutmak (kötüye kullanım sınırları, oyuncu bildirimleri, hata
           kayıtları), oyunu geliştirmek (bölüm ilerleme olayları, bağlantı günleri ve kullanım
           istatistikleri), ücretsiz oyunun gelirini sağlayan isteğe bağlı ödüllü reklam, 18 yaş ve
-          üstündeki oyuncularda Google Play Games oturumu ile hesabın Google Play Games profiline
-          bağlanması ve sana cevap vermek.</li>
+          üstündeki oyuncularda Google Play Games oturumu, hesabın Google Play Games profiline
+          bağlanması, başarımların bu profilde açılması ve sana cevap vermek.</li>
       </ul>
       <p>
         Türkiye'de hiçbir işlemeyi açık rızana dayandırmıyoruz ve oyun senden ayrıca izin istemez.
@@ -470,9 +490,9 @@
           <td>Google (Google LLC ve bağlı şirketleri: AdMob, Google Analytics for Firebase, Google
             Play, Google Play Games)</td>
           <td>Reklam, izin ve kullanım istatistikleri verileri; satın alma ödemesi ve doğrulaması;
-            puanlama penceresi; 18 yaş ve üstünde Google Play Games oturumu, hesap bağı için Google
-            Play Games'in verdiği tek kullanımlık kodun Google'a doğrulatılması ve Google Play Games
-            yazılımının analiz ve teşhis verileri. Google bu verileri kendi politikalarına göre işler:
+            puanlama penceresi; 18 yaş ve üstünde Google Play Games oturumu, hesap bağı ve bağ
+            doğrulaması için Google Play Games'in verdiği tek kullanımlık kodun Google'a doğrulatılması,
+            açılan başarımlar ve Google Play Games yazılımının analiz ve teşhis verileri. Google bu verileri kendi politikalarına göre işler:
             <a href="https://support.google.com/admob/answer/6128543?hl=tr">AdMob ve gizlilik</a>,
             <a href="https://support.google.com/analytics/answer/11582702?hl=tr">Google Analytics for
             Firebase veri toplama</a>,
