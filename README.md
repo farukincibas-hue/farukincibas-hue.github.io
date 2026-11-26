@@ -71,6 +71,15 @@ under `/dynamitearena-legal/`, served at the same kind of address. Their source 
 8. **Check** — every width in the checklist below, every link, and that the new page has no
    `<style>` block, no `style=""` attribute and no hardcoded color outside `site.css`.
 
+### Landscape games
+
+A game played in landscape (DynamiteArena) uses 1280×720 screenshots named
+`<slug>-shot-<name>.webp`, plus a 1920×1080 `<slug>-shot-<name>-full.webp` that the press kit
+links as the downloadable original. Use the wide variants instead of the phone ones:
+`.phone-stage-wide` (`.screen-top`, `.screen-bottom`, `.screen-front`) on the homepage,
+`.product-stage-wide` and `.shot-grid-wide` on the product page, `.press-assets-wide` in the
+press kit. Take the shots from the game's Play store set so the site and the store match.
+
 ## Adding a DynamiteArena hero
 
 Export the portrait to `assets/dynamitearena-hero-<name>.webp` (480×360, transparent) and add
