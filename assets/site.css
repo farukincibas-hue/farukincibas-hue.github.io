@@ -523,10 +523,20 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .phone-back img { border-radius: 19px; }
 .product-stage .phone-front { z-index: 2; left: 14%; top: 5%; width: 42%; padding: 6px; border-radius: 26px; box-shadow: 0 28px 56px rgba(0, 0, 0, 0.6); transform: rotate(-4deg); }
 .phone-front img { border-radius: 20px; }
+/* Landscape games: two wide screens instead of two phones */
+.product-stage-wide { max-width: 600px; aspect-ratio: 5 / 4; }
+.product-stage-wide .phone img { aspect-ratio: 16 / 9; }
+.phone-wide-back { left: 30%; top: 12%; width: 68%; padding: 5px; border-radius: 20px; transform: rotate(4deg); }
+.phone-wide-back img { border-radius: 15px; }
+.product-stage .phone-wide-front { z-index: 2; left: 2%; top: 46%; width: 72%; padding: 6px; border-radius: 22px; box-shadow: 0 28px 56px rgba(0, 0, 0, 0.6); transform: rotate(-3deg); }
+.phone-wide-front img { border-radius: 16px; }
 .feature-banner { width: 100%; aspect-ratio: 1024 / 500; margin-bottom: clamp(48px, 6vw, 88px); border-radius: 28px; object-fit: cover; }
 .shot-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 .shot-frame { padding: 5px; border: 1px solid var(--line); border-radius: 24px; background: #02070d; }
 .shot-frame img { width: 100%; aspect-ratio: 9 / 16; border-radius: 19px; object-fit: cover; }
+.shot-grid-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.shot-grid-wide .shot-frame { border-radius: 20px; }
+.shot-grid-wide .shot-frame img { aspect-ratio: 16 / 9; border-radius: 15px; }
 .shot-grid figcaption { margin-top: 12px; color: var(--text-soft); font-size: 0.875rem; }
 .loop-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .loop-card { padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: var(--card); }
@@ -721,7 +731,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 560px) {
   .stage-list,
-  .feature-tiles { grid-template-columns: minmax(0, 1fr); }
+  .feature-tiles,
+  .shot-grid-wide { grid-template-columns: minmax(0, 1fr); }
   .press-facts > div { grid-template-columns: minmax(0, 1fr); gap: 4px; }
   .rail-controls { display: none; }
   .product-title img { width: 60px; height: 60px; border-radius: 16px; }

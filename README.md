@@ -74,7 +74,8 @@ under `/dynamitearena-legal/`, served at the same kind of address. Their source 
 ## Adding a DynamiteArena hero
 
 Export the portrait to `assets/dynamitearena-hero-<name>.webp` (480×360, transparent) and add
-one `<li class="hero-card tint-…">` to the rail in `index.html`, picking one of the `.tint-*`
+one `<li class="hero-card tint-…">` to the rail in both `index.html` and
+`products/dynamitearena/index.html`, picking one of the `.tint-*`
 classes. The rail scrolls, so nothing else changes.
 
 ## Checklist before pushing
